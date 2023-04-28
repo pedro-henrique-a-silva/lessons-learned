@@ -8,6 +8,21 @@ header {
   color: white;
   width: 100%;
   top: 0;
+  text-align: center;
+}
+
+#link-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+#link-menu a:hover {
+  text-decoration: underline;
+}
+
+#link-menu li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 main {
