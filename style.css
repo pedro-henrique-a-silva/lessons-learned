@@ -52,3 +52,15 @@ main img {
 footer {
   background-color: green;
 }
+
+.table-course tr td {
+  padding: 2px 15px;
+}
+
+.finished {
+  background-color: lawngreen;
+}
+
+.table-head {
+  border: 1px solid black;
+}
