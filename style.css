@@ -7,3 +7,12 @@ header {
   border: 1px solid red;
   top: 0;
 }
+
+main {
+  margin-top: 150px;
+}
+
+main img {
+  width: 100px;
+}
+
