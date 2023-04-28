@@ -9,6 +9,7 @@ header {
   width: 100%;
   top: 0;
   text-align: center;
+  z-index: 10;
 }
 
 #link-menu a {
