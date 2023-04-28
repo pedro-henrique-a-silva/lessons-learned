@@ -25,14 +25,14 @@ header {
   margin: 0 10px;
 }
 
-main {
+.lado-esquerdo {
   margin-top: 150px;
   margin-left: 15%;
   width: 50%;
   padding: 10px;
 }
 
-aside {
+.lado-direito {
   position: absolute;
   width: 30%;
   right: 10px;
