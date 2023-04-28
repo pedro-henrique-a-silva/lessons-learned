@@ -47,6 +47,10 @@ main img {
 
 .article {
   width: 80%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(145, 67, 11, 0.993);
+  line-height: 25px;
+  font-size: 19px;
 }
 
 footer {
