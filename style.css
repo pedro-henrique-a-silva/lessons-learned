@@ -33,3 +33,10 @@ main img {
   width: 100px;
 }
 
+.article {
+  width: 50%;
+}
+
+footer {
+  background-color: green;
+}
