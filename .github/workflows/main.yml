@@ -8,10 +8,10 @@ jobs:
     name: StyleLint
     steps:
       - name: Fetch project repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Fetch Blocked Files Checkout action
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: betrybe/blocked-files-checkout-action
           ref: v2
@@ -19,17 +19,17 @@ jobs:
           path: .github/actions/blocked-files-checkout
 
       - name: Fetch Stylelint evaluator
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: betrybe/stylelint-linter-action
-          ref: v2.1
+          ref: v2.2
           token: ${{ secrets.GIT_HUB_PAT }}
           path: .github/actions/stylelint-evaluator
 
       - name: Setup NodeJS
-        uses: actions/setup-node@v1.4.4
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Restore protected files
         uses: ./.github/actions/blocked-files-checkout
@@ -47,10 +47,10 @@ jobs:
     name: Evaluator job
     steps:
       - name: Fetch project repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Fetch Blocked Files Checkout action
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: betrybe/blocked-files-checkout-action
           ref: v2
@@ -58,10 +58,10 @@ jobs:
           path: .github/actions/blocked-files-checkout
 
       - name: Fetch Cypress evaluator
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: betrybe/cypress-evaluator-action
-          ref: v7
+          ref: v8.1
           token: ${{ secrets.GIT_HUB_PAT }}
           path: .github/actions/cypress-evaluator
 
@@ -74,9 +74,9 @@ jobs:
           path: .github/actions/store-evaluation
 
       - name: Setup NodeJS
-        uses: actions/setup-node@v1.4.4
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Restore protected files
         uses: ./.github/actions/blocked-files-checkout
